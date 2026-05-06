@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA Cards</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #1e1e1e;
+      font-family: Arial;
+    }
+
+    .cards {
+      display: grid;
+	  grid-template-columns: repeat(3, 1fr);
+	  gap: 20px;
+	  justify-items: center;
+    }
+
+    .card-img {
+      width: 450px;
+	  height: auto;
+	  
+	  display: block;
+    }
+
+    .card-img:hover {
+      transform: scale(1.05);
+    }
+	
+	@media (max-width: 400px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+
+</head>
+<body>
+
+<h1 style="color:white;">My FIFA Cards</h1>
+
+<div class="cards">
+
+  <img src="cards/1.png" class="card-img">
+  <img src="cards/2.png" class="card-img">
+  <img src="cards/3.png" class="card-img">
+  <img src="cards/4.png" class="card-img">
+
+</div>
+
+</body>
+</html>
